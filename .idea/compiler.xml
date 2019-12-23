@@ -7,8 +7,8 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="flyrider-logging" />
-        <module name="flyrider-common" />
         <module name="flyrider-generator" />
+        <module name="flyrider-common" />
         <module name="flyrider-system" />
         <module name="flyrider-tools" />
       </profile>
