@@ -11,9 +11,9 @@
     <modules>
         <module>flyrider-common</module>
         <module>flyrider-system</module>
-      <module>flyrider-logging</module>
+        <module>flyrider-logging</module>
         <module>flyrider-generator</module>
-      <module>flyrider-tools</module>
+        <module>flyrider-tools</module>
     </modules>
 
     <name>Fly-Rider后台管理系统</name>
