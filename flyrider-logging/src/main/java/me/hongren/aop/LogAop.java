@@ -9,6 +9,7 @@ import java.lang.annotation.Target;
 @Target(ElementType.METHOD)
 //运行时注解
 @Retention(RetentionPolicy.RUNTIME)
-public @interface Log {
+public @interface LogAop {
+    //方法描述
     String value() default "";
 }
