@@ -4,6 +4,8 @@ import lombok.extern.slf4j.Slf4j;
 import me.hongren.domain.Log;
 import me.hongren.service.LogService;
 import me.hongren.utils.RequestHolder;
+import me.hongren.utils.SecurityUtils;
+import org.apache.catalina.security.SecurityUtil;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
@@ -52,6 +54,14 @@ public class LogAspect {
         HttpServletRequest request = RequestHolder.getHttpServletRequest();
 
         return result;
+    }
+
+    public String getUsername() {
+        try {
+            return SecurityUtils.getUsername();
+        }catch (Exception e){
+            return "";
+        }
     }
 
 }

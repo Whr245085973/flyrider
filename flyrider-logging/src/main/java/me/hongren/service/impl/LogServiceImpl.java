@@ -48,7 +48,7 @@ public class LogServiceImpl implements LogService {
             log.setDescription(aopLogAop.value());
         }
         assert log != null;
-
+        log.setRequestIp(ip);
 
 
     }
